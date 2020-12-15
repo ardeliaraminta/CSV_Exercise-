@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 
 """load csv file and ignored missing data or NA """
 
-with open('activity.csv','r')as f:
-    data = csv.reader(f)
+with open('activity.csv','r')as a:
+    data = csv.reader(a)
     mydictionary = {}
     for row in data:
         if row[0] != '0' and row[1] != 'date' and row [0] != 'NA':
